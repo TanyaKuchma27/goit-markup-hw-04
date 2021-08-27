@@ -172,29 +172,15 @@ a.current {
   color: var(--accent-color);
 }
 
-/* псевдоэлементы */
-
-.header-outnav .header-list {
+.header-adress.link {
   display: flex;
   align-items: center;
 }
 
-.header-outnav .header-list::before {
-  content: '';
-  height: 16px;
-  width: 16px;
+.icon-mail,
+.icon-tel {
+  fill: currentColor;
   margin-right: 10px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.icon-mail::before {
-  background-image: url(../images/mail.svg);
-}
-
-.icon-tel::before {
-  background-image: url(../images/tel.svg);
 }
 
 /* -----HERO----- */
@@ -287,31 +273,15 @@ a.current {
   color: var(--title-text-color);
 }
 
-.characteristic-element::before {
-  display: block;
-  content: '';
+.characteristic-element-icon {
+  margin-bottom: 30px;
+  width: 270px;
   height: 120px;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-bottom: 10px;
-  background-color: #f5f4fa;
+  background: #f5f4fa;
   border-radius: 4px;
-}
-
-.icon-antenna::before {
-  background-image: url(../images/antenna.svg);
-}
-
-.icon-clock::before {
-  background-image: url(../images/clock.svg);
-}
-
-.icon-diagram::before {
-  background-image: url(../images/diagram.svg);
-}
-
-.icon-astronaut::before {
-  background-image: url(../images/astronaut.svg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* -----WORK AND TEAM----- */
@@ -408,12 +378,32 @@ a.current {
 .social-item {
   width: 44px;
   height: 44px;
-  outline: 1px solid red;
-  cursor: pointer;
 }
 
 .social-item:not(:last-child) {
   margin-right: 10px;
+}
+
+.social-item-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.social-item-icon {
+  fill: #afb1b8;
+}
+
+.social-item-link:hover,
+.social-item-link:focus,
+.social-item-icon:hover,
+.social-item-icon:focus {
+  fill: #ffffff;
+  background-color: var(--accent-color);
 }
 
 /* -----CLIENT----- */
@@ -444,6 +434,28 @@ a.current {
 
 .client-list-item:not(:last-child) {
   margin-right: 30px;
+}
+
+.client-logo.link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.client-logo-icon {
+  fill: #afb1b8;
+}
+
+.client-list-item:hover,
+.client-list-item:focus {
+  border: 1px solid var(--accent-color);
+}
+
+.client-logo-icon:hover,
+.client-logo-icon:focus {
+  fill: var(--accent-color);
 }
 
 /* -----FOOTER----- */
@@ -522,12 +534,29 @@ a.current {
 .join-item {
   width: 44px;
   height: 44px;
-  outline: 1px solid red;
-  cursor: pointer;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .join-item:not(:last-child) {
   margin-right: 10px;
+}
+
+.join-item-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.join-item-icon {
+  fill: #ffffff;
+}
+
+.join-item:hover,
+.join-item:focus {
+  background-color: var(--accent-color);
 }
 
 /* -----PORTFOLIO----- */
