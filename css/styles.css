@@ -400,8 +400,8 @@ a.current {
 
 .social-item-link:hover,
 .social-item-link:focus,
-.social-item-icon:hover,
-.social-item-icon:focus {
+.social-item-link:hover .social-item-icon,
+.social-item-link:focus .social-item-icon {
   fill: #ffffff;
   background-color: var(--accent-color);
 }
@@ -453,8 +453,8 @@ a.current {
   border: 1px solid var(--accent-color);
 }
 
-.client-logo-icon:hover,
-.client-logo-icon:focus {
+.client-logo:hover .client-logo-icon,
+.client-logo:focus .client-logo-icon {
   fill: var(--accent-color);
 }
 
@@ -554,9 +554,10 @@ a.current {
   fill: #ffffff;
 }
 
-.join-item:hover,
-.join-item:focus {
+.join-item-link:hover,
+.join-item-link:focus {
   background-color: var(--accent-color);
+  border-radius: 50%;
 }
 
 /* -----PORTFOLIO----- */
